@@ -1,4 +1,4 @@
-import React, { useState, useCallback, lazy, Suspense } from "react";
+import React, { useState, useCallback, useEffect, lazy, Suspense } from "react";
 import "./App.css";
 import TubesCursor from "./components/TubesCursor";
 
@@ -14,6 +14,9 @@ import NavigationAlertsHUD from "./components/ui/NavigationAlertsHUD";
 import SensorCalibrationHUD from "./components/ui/SensorCalibrationHUD";
 import MultiplayerLeaderboard from "./components/ui/MultiplayerLeaderboard";
 import PostRideSummaryHUD from "./components/ui/PostRideSummaryHUD";
+import { PrivacyPolicy } from "./components/legal/PrivacyPolicy";
+import { TermsOfUse } from "./components/legal/TermsOfUse";
+import { CookieNotice } from "./components/legal/CookieNotice";
 import {
   Navigation,
   MapPin,
@@ -58,6 +61,9 @@ const menuItems = [
   { label: "Creator", ariaLabel: "About the Creator", link: "#creator" },
   { label: "Contact", ariaLabel: "Contact RiderIQ", link: "#contact" },
   { label: "Early Access", ariaLabel: "Join Waitlist", link: "#waitlist" },
+  { label: "Privacy Policy", ariaLabel: "RiderIQ Privacy Policy", link: "/privacy" },
+  { label: "Terms of Use", ariaLabel: "RiderIQ Terms of Use", link: "/terms" },
+  { label: "Cookie Info", ariaLabel: "RiderIQ Cookie Disclosure", link: "/cookie-notice" },
 ];
 
 // ─── Module-level constants — defined once, never recreated on render ─────────
@@ -170,6 +176,27 @@ function App() {
   const [activeBike, setActiveBike] = useState("hunter");
   const [activeNode, setActiveNode] = useState<string>("Map");
   const [copiedEmail, setCopiedEmail] = useState(false);
+  const [currentPath, setCurrentPath] = useState<string>(() => window.location.pathname);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname);
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  const handleNavigate = useCallback((path: string) => {
+    if (path.startsWith("#")) {
+      const el = document.querySelector(path);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+      return;
+    }
+    window.history.pushState(null, "", path);
+    setCurrentPath(path);
+  }, []);
 
   const handleCopyEmail = useCallback(() => {
     navigator.clipboard.writeText("contactphoenixfy@gmail.com");
@@ -188,6 +215,18 @@ function App() {
   }, [email]);
 
   const experienceNodes = EXPERIENCE_NODES;
+
+  if (currentPath === "/privacy") {
+    return <PrivacyPolicy onNavigate={handleNavigate} />;
+  }
+
+  if (currentPath === "/terms") {
+    return <TermsOfUse onNavigate={handleNavigate} />;
+  }
+
+  if (currentPath === "/cookie-notice") {
+    return <CookieNotice onNavigate={handleNavigate} />;
+  }
 
   return (
     <div className="relative min-h-screen bg-black text-white selection:bg-cyan-500/30 selection:text-cyan-200">
@@ -895,7 +934,7 @@ function App() {
 
       </main>
 
-      <CinematicFooter />
+      <CinematicFooter onNavigate={handleNavigate} />
     </div>
   );
 }

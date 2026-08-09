@@ -202,7 +202,7 @@ const MarqueeItem = () => (
   </div>
 );
 
-export function CinematicFooter() {
+export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) => void }) {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const giantTextRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -253,6 +253,19 @@ export function CinematicFooter() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleLegalClick = (e: React.MouseEvent<HTMLElement>, path: string) => {
+    if (path.startsWith("#")) {
+      // Anchor link
+      return;
+    }
+    e.preventDefault();
+    if (onNavigate) {
+      onNavigate(path);
+    } else {
+      window.location.href = path;
+    }
   };
 
   return (
@@ -349,6 +362,45 @@ export function CinematicFooter() {
                 >
                   <span>LinkedIn</span>
                   <span className="text-cyan-400 text-xs">Namish Yadav</span>
+                </MagneticButton>
+              </div>
+
+              {/* 3. Legal & Trust Links */}
+              <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 w-full text-center pt-2">
+                <MagneticButton
+                  as="a"
+                  href="/privacy"
+                  onClick={(e: any) => handleLegalClick(e, "/privacy")}
+                  className="footer-glass-pill px-4 py-2 rounded-full text-neutral-300 font-medium text-xs hover:text-cyan-300 flex items-center justify-center gap-1.5 min-h-[38px] text-center"
+                >
+                  <span>Privacy Policy</span>
+                </MagneticButton>
+
+                <MagneticButton
+                  as="a"
+                  href="/terms"
+                  onClick={(e: any) => handleLegalClick(e, "/terms")}
+                  className="footer-glass-pill px-4 py-2 rounded-full text-neutral-300 font-medium text-xs hover:text-cyan-300 flex items-center justify-center gap-1.5 min-h-[38px] text-center"
+                >
+                  <span>Terms of Use</span>
+                </MagneticButton>
+
+                <MagneticButton
+                  as="a"
+                  href="/cookie-notice"
+                  onClick={(e: any) => handleLegalClick(e, "/cookie-notice")}
+                  className="footer-glass-pill px-4 py-2 rounded-full text-neutral-300 font-medium text-xs hover:text-cyan-300 flex items-center justify-center gap-1.5 min-h-[38px] text-center"
+                >
+                  <span>Cookie Info</span>
+                </MagneticButton>
+
+                <MagneticButton
+                  as="a"
+                  href="#contact"
+                  onClick={(e: any) => handleLegalClick(e, "#contact")}
+                  className="footer-glass-pill px-4 py-2 rounded-full text-neutral-300 font-medium text-xs hover:text-cyan-300 flex items-center justify-center gap-1.5 min-h-[38px] text-center"
+                >
+                  <span>Contact</span>
                 </MagneticButton>
               </div>
             </div>
