@@ -10,9 +10,9 @@ export const CookieNotice: React.FC<CookieNoticeProps> = ({ onNavigate }) => {
   return (
     <LegalLayout
       title="Cookie & Tracking Notice"
-      subtitle="Detailed disclosure of essential session cookies and browser storage used on RiderIQ."
+      subtitle="Detailed disclosure of essential session cookies and browser storage used on Brovxi."
       badge="COOKIE DISCLOSURE"
-      metaDescription="Learn about the strictly necessary session cookies and browser storage used by RiderIQ for Spotify OAuth session authentication."
+      metaDescription="Learn about the strictly necessary session cookies and browser storage used by Brovxi for Spotify OAuth session authentication."
       activeTab="cookie"
       onNavigate={onNavigate}
     >
@@ -23,7 +23,7 @@ export const CookieNotice: React.FC<CookieNoticeProps> = ({ onNavigate }) => {
           <h2>1. Cookie & Web Storage Policy Summary</h2>
         </div>
         <p>
-          RiderIQ is committed to minimal data footprint and user transparency. We use browser cookies and Web Storage (local storage and session storage) <strong>exclusively to provide essential Spotify authentication session features</strong> when you choose to connect your Spotify account to the Intercom Cockpit.
+          Brovxi is committed to minimal data footprint and user transparency. We use browser cookies and Web Storage (local storage and session storage) <strong>exclusively to provide essential Spotify authentication session features</strong> when you choose to connect your Spotify account to the Intercom Cockpit.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -52,7 +52,7 @@ export const CookieNotice: React.FC<CookieNoticeProps> = ({ onNavigate }) => {
           <h2>2. Technical Audit of Cookies & Browser Storage</h2>
         </div>
         <p>
-          Below is a complete audit of all cookies and browser storage keys created or read by the RiderIQ platform:
+          Below is a complete audit of all cookies and browser storage keys created or read by the Brovxi platform:
         </p>
 
         <div className="space-y-4 mt-4">
@@ -120,7 +120,7 @@ export const CookieNotice: React.FC<CookieNoticeProps> = ({ onNavigate }) => {
           Under major data protection regulations (such as the EU ePrivacy Directive and GDPR), cookies that are strictly necessary to deliver a specific service explicitly requested by the user (such as maintaining a user-initiated Spotify authentication session) are exempt from requiring an intrusive consent pop-up banner.
         </p>
         <p>
-          Because RiderIQ does <strong>NOT</strong> use any non-essential cookies, tracking pixels, or third-party marketing trackers, we do not pollute your browsing experience with unnecessary pop-up banners.
+          Because Brovxi does <strong>NOT</strong> use any non-essential cookies, tracking pixels, or third-party marketing trackers, we do not pollute your browsing experience with unnecessary pop-up banners.
         </p>
       </section>
 
@@ -131,7 +131,7 @@ export const CookieNotice: React.FC<CookieNoticeProps> = ({ onNavigate }) => {
           <h2>4. Managing & Deleting Storage</h2>
         </div>
         <p>
-          You can clear all RiderIQ cookies and local storage items at any time:
+          You can clear all Brovxi cookies and local storage items at any time:
         </p>
         <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm text-neutral-300">
           <li>

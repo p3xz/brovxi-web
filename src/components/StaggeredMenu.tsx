@@ -436,7 +436,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
           <div className="sm-panel-header">
             <span className="sm-panel-tag flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-              RIDERIQ NAVIGATION
+              BROVXI NAVIGATION
             </span>
             <span className="sm-panel-badge">{items.length} SECTIONS</span>
           </div>

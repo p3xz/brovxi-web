@@ -355,7 +355,7 @@ export default function PostRideSummaryHUD() {
 
           <div className="text-xs font-mono text-neutral-400 flex items-center gap-2">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span>Ride automatically saved to your RiderIQ History with full fuel, lean, &amp; pace logs.</span>
+            <span>Ride automatically saved to your Brovxi History with full fuel, lean, &amp; pace logs.</span>
           </div>
         </div>
       </div>

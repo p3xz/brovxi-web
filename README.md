@@ -1,14 +1,14 @@
-# 🏍️ RiderIQ — Connected Motorcycle Telemetry & Cockpit Engine
+# 🏍️ Brovxi — Connected Motorcycle Telemetry & Cockpit Engine
 
-> **Notice:** This repository contains the official **RiderIQ Pre-Launch Web Platform & Interactive Simulator**. The full native mobile applications (iOS & Android) and hardware sensor integrations are currently under active development.
+> **Notice:** This repository contains the official **Brovxi Pre-Launch Web Platform & Interactive Simulator**. The full native mobile applications (iOS & Android) and hardware sensor integrations are currently under active development.
 
 ---
 
 ## 🌟 Overview
 
-**RiderIQ** is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine engineered specifically for two wheels. Built around real motorcycle dynamics, RiderIQ combines 6-axis IMU sensor fusion, Google/Apple Maps speed camera radar warnings, post-ride ETA pace delta analytics, and an integrated Spotify Web API Intercom Cockpit.
+**Brovxi** is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine engineered specifically for two wheels. Built around real motorcycle dynamics, Brovxi combines 6-axis IMU sensor fusion, Google/Apple Maps speed camera radar warnings, post-ride ETA pace delta analytics, and an integrated Spotify Web API Intercom Cockpit.
 
-Instead of just recording a ride — **RiderIQ helps you master it.**
+Instead of just recording a ride — **Brovxi helps you master it.**
 
 ---
 
@@ -43,13 +43,13 @@ Instead of just recording a ride — **RiderIQ helps you master it.**
 
 ## 🚀 Upcoming Mobile App & Hardware Roadmap (Future Release)
 
-The RiderIQ ecosystem is expanding into a full hardware & mobile suite:
+The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 - 📱 **Native iOS & Android Mobile Apps**: High-frequency background GPS & IMU logging.
 - ⚡ **Bluetooth 5.3 IMU Hardware Node**: Dedicated low-latency 6-axis IMU sensor pod for ultra-precise lean angle capture.
 - 🏍️ **ECU OBD-II Data Integration**: Real-time RPM, throttle position (WOT), gear selection, and engine temperature telemetry.
 - 🎧 **Helmet Intercom Mesh Sync**: Voice HUD navigation alerts and group rider voice mesh integration.
-- ☁️ **RiderIQ Cloud Vault**: Cloud route sharing, twisties discovery, and telemetry archiving.
+- ☁️ **Brovxi Cloud Vault**: Cloud route sharing, twisties discovery, and telemetry archiving.
 
 ---
 
@@ -74,8 +74,8 @@ The RiderIQ ecosystem is expanding into a full hardware & mobile suite:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/rideiq.git
-   cd rideiq
+   git clone https://github.com/namish-yadav/brovxi.git
+   cd brovxi
    ```
 
 2. **Install Dependencies:**
@@ -93,9 +93,9 @@ The RiderIQ ecosystem is expanding into a full hardware & mobile suite:
    ```env
    SPOTIFY_CLIENT_ID=your_spotify_client_id_here
    SPOTIFY_CLIENT_SECRET=your_spotify_client_secret_here
-   SPOTIFY_REDIRECT_URI=https://rider-iq-seven.vercel.app/api/spotify/callback
+   SPOTIFY_REDIRECT_URI=https://brovxi-seven.vercel.app/api/spotify/callback
    ```
-   *(Make sure to register `https://rider-iq-seven.vercel.app/api/spotify/callback` under Redirect URIs in your Spotify Dashboard).*
+   *(Make sure to register `https://brovxi-seven.vercel.app/api/spotify/callback` under Redirect URIs in your Spotify Dashboard).*
 
 4. **Start the Development Server:**
    ```bash
@@ -119,5 +119,5 @@ The RiderIQ ecosystem is expanding into a full hardware & mobile suite:
 ---
 
 <p center="text-center">
-  <strong>One ride. One experience. RiderIQ. 🏍️⚡</strong>
+  <strong>One ride. One experience. Brovxi. 🏍️⚡</strong>
 </p>

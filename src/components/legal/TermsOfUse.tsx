@@ -10,9 +10,9 @@ export const TermsOfUse: React.FC<TermsOfUseProps> = ({ onNavigate }) => {
   return (
     <LegalLayout
       title="Terms of Use"
-      subtitle="Terms and conditions governing your access to and use of the RiderIQ web platform, telemetry simulator, and features."
+      subtitle="Terms and conditions governing your access to and use of the Brovxi web platform, telemetry simulator, and features."
       badge="TERMS & CONDITIONS"
-      metaDescription="Read the official RiderIQ Terms of Use covering permitted simulator use, rider safety warnings, intellectual property, speed camera disclaimers, and Spotify API terms."
+      metaDescription="Read the official Brovxi Terms of Use covering permitted simulator use, rider safety warnings, intellectual property, speed camera disclaimers, and Spotify API terms."
       activeTab="terms"
       onNavigate={onNavigate}
     >
@@ -23,7 +23,7 @@ export const TermsOfUse: React.FC<TermsOfUseProps> = ({ onNavigate }) => {
           <h2>1. Acceptance of Terms</h2>
         </div>
         <p>
-          By accessing or using the RiderIQ website, telemetry simulator, Spotify Intercom HUD, or associated web services (collectively, "the Platform"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to all terms and conditions outlined herein, you must immediately discontinue use of the Platform.
+          By accessing or using the Brovxi website, telemetry simulator, Spotify Intercom HUD, or associated web services (collectively, "the Platform"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to all terms and conditions outlined herein, you must immediately discontinue use of the Platform.
         </p>
       </section>
 
@@ -65,7 +65,7 @@ export const TermsOfUse: React.FC<TermsOfUseProps> = ({ onNavigate }) => {
           <li>Attempt to reverse-engineer, decompile, or extract source code from the Platform or serverless endpoints.</li>
           <li>Use automated bots, scrapers, or scripts to overload or flood Platform infrastructure.</li>
           <li>Interfere with or bypass Spotify OAuth authentication mechanisms or rate limits.</li>
-          <li>Re-host, redistribute, or white-label the RiderIQ telemetry simulator or UI components without prior written consent.</li>
+          <li>Re-host, redistribute, or white-label the Brovxi telemetry simulator or UI components without prior written consent.</li>
           <li>Violate any local traffic laws, speed limits, or motor vehicle regulations.</li>
         </ul>
       </section>
@@ -93,10 +93,10 @@ export const TermsOfUse: React.FC<TermsOfUseProps> = ({ onNavigate }) => {
           <h2>5. Intellectual Property & Third-Party Services</h2>
         </div>
         <p>
-          <strong>RiderIQ IP:</strong> The RiderIQ brand, logo, UI/UX designs, motion graphics, WebGL interactive code, and telemetry calculation algorithms are the intellectual property of the project creator.
+          <strong>Brovxi IP:</strong> The Brovxi brand, logo, UI/UX designs, motion graphics, WebGL interactive code, and telemetry calculation algorithms are the intellectual property of the project creator.
         </p>
         <p>
-          <strong>Third-Party Trademarks:</strong> "Spotify" and the Spotify logo are registered trademarks of Spotify AB. RiderIQ is an independent software project utilizing public Spotify Web API developer endpoints and is not affiliated with, endorsed by, or sponsored by Spotify AB.
+          <strong>Third-Party Trademarks:</strong> "Spotify" and the Spotify logo are registered trademarks of Spotify AB. Brovxi is an independent software project utilizing public Spotify Web API developer endpoints and is not affiliated with, endorsed by, or sponsored by Spotify AB.
         </p>
       </section>
 
@@ -113,7 +113,7 @@ export const TermsOfUse: React.FC<TermsOfUseProps> = ({ onNavigate }) => {
           TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PLATFORM IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
         </p>
         <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
-          IN NO EVENT SHALL RIDERIQ, ITS CREATORS, OR CONTRIBUTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, OR PUNITIVE DAMAGES, OR FOR ANY MOTOR VEHICLE ACCIDENTS, TRAFFIC FINES, INJURIES, OR LOSS OF DATA ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS TO OR USE OF THE PLATFORM.
+          IN NO EVENT SHALL BROVXI, ITS CREATORS, OR CONTRIBUTORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, OR PUNITIVE DAMAGES, OR FOR ANY MOTOR VEHICLE ACCIDENTS, TRAFFIC FINES, INJURIES, OR LOSS OF DATA ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS TO OR USE OF THE PLATFORM.
         </p>
       </section>
 
@@ -139,7 +139,7 @@ export const TermsOfUse: React.FC<TermsOfUseProps> = ({ onNavigate }) => {
         </p>
         <div className="pt-2">
           <a
-            href="mailto:contactphoenixfy@gmail.com?subject=RiderIQ%20Terms%20Inquiry"
+            href="mailto:contactphoenixfy@gmail.com?subject=Brovxi%20Terms%20Inquiry"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-cyan-300 font-mono text-sm font-semibold transition-all"
           >
             <span>contactphoenixfy@gmail.com</span>

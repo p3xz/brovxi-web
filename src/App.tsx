@@ -49,7 +49,7 @@ import {
 const SpotifyMusicHUD = lazy(() => import("./components/ui/SpotifyMusicHUD"));
 
 const menuItems = [
-  { label: "Overview", ariaLabel: "Overview of RiderIQ", link: "#overview" },
+  { label: "Overview", ariaLabel: "Overview of Brovxi", link: "#overview" },
   { label: "Post-Ride Summary & ETA", ariaLabel: "ETA Pace Delta & Velocity Graph", link: "#ride-summary" },
   { label: "Gyro & Sensor Calibration", ariaLabel: "6-Axis Sensor Fusion", link: "#sensor-calibration" },
   { label: "Speed Camera Radar", ariaLabel: "Google Maps Speed Alerts", link: "#radar-alerts" },
@@ -57,13 +57,13 @@ const menuItems = [
   { label: "Lean HUD Simulator", ariaLabel: "Lean Angle HUD", link: "#telemetry-hud" },
   { label: "Multiplayer & Friends", ariaLabel: "Rider Leaderboard", link: "#multiplayer" },
   { label: "Tour Calculator", ariaLabel: "Fuel & Tour Intelligence", link: "#tour-calculator" },
-  { label: "Experience", ariaLabel: "The RiderIQ Experience", link: "#experience" },
+  { label: "Experience", ariaLabel: "The Brovxi Experience", link: "#experience" },
   { label: "Creator", ariaLabel: "About the Creator", link: "#creator" },
-  { label: "Contact", ariaLabel: "Contact RiderIQ", link: "#contact" },
+  { label: "Contact", ariaLabel: "Contact Brovxi", link: "#contact" },
   { label: "Early Access", ariaLabel: "Join Waitlist", link: "#waitlist" },
-  { label: "Privacy Policy", ariaLabel: "RiderIQ Privacy Policy", link: "/privacy" },
-  { label: "Terms of Use", ariaLabel: "RiderIQ Terms of Use", link: "/terms" },
-  { label: "Cookie Info", ariaLabel: "RiderIQ Cookie Disclosure", link: "/cookie-notice" },
+  { label: "Privacy Policy", ariaLabel: "Brovxi Privacy Policy", link: "/privacy" },
+  { label: "Terms of Use", ariaLabel: "Brovxi Terms of Use", link: "/terms" },
+  { label: "Cookie Info", ariaLabel: "Brovxi Cookie Disclosure", link: "/cookie-notice" },
 ];
 
 // ─── Module-level constants — defined once, never recreated on render ─────────
@@ -243,7 +243,7 @@ function App() {
       <div className="fixed top-6 left-6 z-50 pointer-events-auto">
         <a href="#" className="no-underline block">
           <Shuffle
-            text="RiderIQ"
+            text="Brovxi"
             shuffleDirection="right"
             duration={0.35}
             animationMode="evenodd"
@@ -291,7 +291,7 @@ function App() {
             </h1>
 
             <p className="max-w-2xl text-base sm:text-xl text-neutral-300 leading-relaxed mb-12">
-              RiderIQ turns every motorcycle ride into post-ride telemetry reports, ETA pace calculations, 6-axis lean graphs, and friend leaderboards.
+              Brovxi turns every motorcycle ride into post-ride telemetry reports, ETA pace calculations, 6-axis lean graphs, and friend leaderboards.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md">
@@ -325,7 +325,7 @@ function App() {
                 Automatic Post-Ride Telemetry Card & ETA Comparison
               </h2>
               <p className="text-neutral-300 text-base sm:text-lg">
-                After every ride, RiderIQ compiles your distance, top speed, average speed, max lean angle, velocity curve, and compares your actual duration against Google Maps estimated ETA (e.g. <strong>Greater Noida to Mathura: 75 min ETA vs 52 min actual = 23 min faster ⚡</strong>).
+                After every ride, Brovxi compiles your distance, top speed, average speed, max lean angle, velocity curve, and compares your actual duration against Google Maps estimated ETA (e.g. <strong>Greater Noida to Mathura: 75 min ETA vs 52 min actual = 23 min faster ⚡</strong>).
               </p>
             </div>
 
@@ -358,7 +358,7 @@ function App() {
 
                 <div className="p-6 rounded-2xl bg-gradient-to-r from-cyan-950/40 via-neutral-900/60 to-black border border-cyan-500/20 backdrop-blur-md">
                   <p className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                    "Instead of just recording a ride, RiderIQ helps you master it."
+                    "Instead of just recording a ride, Brovxi helps you master it."
                   </p>
                 </div>
               </div>
@@ -454,7 +454,7 @@ function App() {
                 Mounting Independent Gyroscope Calibration
               </h2>
               <p className="text-neutral-300 text-base sm:text-lg">
-                Whether mounted on handlebars, flat in a tank bag, or inside your jacket — RiderIQ's 6-axis IMU algorithm auto-zeroes pitch offsets for true lean accuracy.
+                Whether mounted on handlebars, flat in a tank bag, or inside your jacket — Brovxi's 6-axis IMU algorithm auto-zeroes pitch offsets for true lean accuracy.
               </p>
             </div>
 
@@ -498,7 +498,7 @@ function App() {
                 Spotify Intercom Music Cockpit
               </h2>
               <p className="text-neutral-300 text-base sm:text-lg">
-                Connect your Spotify Premium account directly to RiderIQ for speed-adaptive wind noise volume boosting, radar alert auto-ducking (-12dB), and one-tap curated riding playlists.
+                Connect your Spotify Premium account directly to Brovxi for speed-adaptive wind noise volume boosting, radar alert auto-ducking (-12dB), and one-tap curated riding playlists.
               </p>
             </div>
 
@@ -692,7 +692,7 @@ function App() {
                     </div>
 
                     <div className="lg:col-span-8 space-y-4">
-                      <div className="text-xs font-mono text-neutral-400 uppercase">RIDERIQ HARDWARE & APP HUB</div>
+                      <div className="text-xs font-mono text-neutral-400 uppercase">BROVXI HARDWARE & APP HUB</div>
                       <p className="text-lg sm:text-xl text-neutral-200 leading-relaxed">
                         {active.description}
                       </p>
@@ -708,7 +708,7 @@ function App() {
 
               <div className="mt-12 text-center relative z-10 pt-8 border-t border-white/10">
                 <p className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-                  One ride. One experience. <span className="text-cyan-400">RiderIQ.</span>
+                  One ride. One experience. <span className="text-cyan-400">Brovxi.</span>
                 </p>
               </div>
             </div>
@@ -731,7 +731,7 @@ function App() {
                 </h2>
 
                 <p className="text-lg text-neutral-300 leading-relaxed">
-                  RiderIQ is an independent technology project focused on creating a superior digital experience on two wheels.
+                  Brovxi is an independent technology project focused on creating a superior digital experience on two wheels.
                 </p>
 
                 <p className="text-neutral-400 leading-relaxed text-base">
@@ -834,10 +834,10 @@ function App() {
                   <div className="text-xs font-mono text-neutral-400 uppercase">Select Topic to Mail</div>
                   <div className="flex flex-wrap gap-2.5">
                     {[
-                      { label: "💡 Feature Idea", subject: "RiderIQ Feature Idea" },
-                      { label: "🛠️ Developer API", subject: "RiderIQ Developer API Inquiry" },
-                      { label: "🤝 Partnership", subject: "RiderIQ Partnership Proposal" },
-                      { label: "🏍️ Rider Feedback", subject: "RiderIQ Rider Feedback" }
+                      { label: "💡 Feature Idea", subject: "Brovxi Feature Idea" },
+                      { label: "🛠️ Developer API", subject: "Brovxi Developer API Inquiry" },
+                      { label: "🤝 Partnership", subject: "Brovxi Partnership Proposal" },
+                      { label: "🏍️ Rider Feedback", subject: "Brovxi Rider Feedback" }
                     ].map((topic, i) => (
                       <a
                         key={i}
@@ -853,7 +853,7 @@ function App() {
                 <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 max-w-full overflow-hidden">
                   <a href="mailto:contactphoenixfy@gmail.com" className="no-underline shrink-0">
                     <SpecularButton size="lg" radius={999} lineColor="#06b6d4" baseColor="#0891b2" textColor="#ffffff" className="w-full sm:w-auto min-h-[44px]">
-                      Contact RiderIQ ↗
+                      Contact Brovxi ↗
                     </SpecularButton>
                   </a>
 
@@ -901,7 +901,7 @@ function App() {
             </h2>
 
             <p className="text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto mb-4">
-              RiderIQ is in active development. Join the waitlist for early telemetry access.
+              Brovxi is in active development. Join the waitlist for early telemetry access.
             </p>
 
             <form onSubmit={handleWaitlistSubmit} className="max-w-md mx-auto space-y-4">
@@ -925,7 +925,7 @@ function App() {
               {submitted && (
                 <div className="p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-sm font-medium flex items-center justify-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                  You're on the list! We'll reach out when RiderIQ hits the road.
+                  You're on the list! We'll reach out when Brovxi hits the road.
                 </div>
               )}
             </form>

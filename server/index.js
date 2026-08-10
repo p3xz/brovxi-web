@@ -28,7 +28,7 @@ function getBaseUrl(req) {
 
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
 
-  return 'https://rider-iq-seven.vercel.app';
+  return 'https://brovxi-seven.vercel.app';
 }
 
 function getSpotifyRedirectUri(req) {
@@ -694,6 +694,6 @@ export default app;
 
 if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
   app.listen(PORT, () => {
-    console.log(`⚡ RiderIQ Spotify OAuth Backend Server listening on http://localhost:${PORT}`);
+    console.log(`⚡ Brovxi Spotify OAuth Backend Server listening on http://localhost:${PORT}`);
   });
 }

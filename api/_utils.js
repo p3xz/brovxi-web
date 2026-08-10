@@ -30,7 +30,7 @@ export function getCredentials() {
   const redirectUri =
     env['SPOTIFY_REDIRECT_URI'] ||
     env['VITE_SPOTIFY_REDIRECT_URI'] ||
-    'https://rider-iq-seven.vercel.app/api/spotify/callback';
+    'https://brovxi-seven.vercel.app/api/spotify/callback';
 
   return { clientId, clientSecret, redirectUri };
 }

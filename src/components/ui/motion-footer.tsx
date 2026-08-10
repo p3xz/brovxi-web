@@ -286,7 +286,7 @@ export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) =>
             ref={giantTextRef}
             className="footer-giant-bg-text absolute -bottom-[2vh] left-1/2 -translate-x-1/2 whitespace-nowrap z-0 pointer-events-none select-none uppercase"
           >
-            RIDER IQ
+            Brovxi
           </div>
 
           <div className="relative md:absolute top-0 md:top-10 left-0 w-full overflow-hidden border-y border-white/10 bg-black/70 backdrop-blur-md py-3 md:py-4 z-10 md:-rotate-1 md:scale-105 shadow-2xl my-3 md:my-0">
@@ -309,7 +309,7 @@ export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) =>
             </h2>
 
             <p className="text-neutral-400 max-w-lg mx-auto text-xs sm:text-sm md:text-base mb-6 md:mb-8 text-center px-2">
-              RiderIQ is engineered for riders who demand precision, telemetry, and intelligent route insights.
+              Brovxi is engineered for riders who demand precision, telemetry, and intelligent route insights.
             </p>
 
             <div ref={linksRef} className="flex flex-col items-center justify-center gap-5 md:gap-6 w-full max-w-full my-4 md:my-0">
@@ -317,7 +317,7 @@ export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) =>
               <div className="flex flex-wrap justify-center items-center gap-4 w-full text-center">
                 <MagneticButton
                   as="a"
-                  href="https://github.com/namish-yadav/rideiq"
+                  href="https://github.com/namish-yadav/brovxi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-glass-pill px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-white font-bold text-xs sm:text-sm md:text-base flex items-center justify-center gap-2.5 bg-cyan-500/10 border-cyan-500/30 hover:border-cyan-400 shadow-xl shadow-cyan-500/10 min-h-[44px] mx-auto text-center"
@@ -410,7 +410,7 @@ export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) =>
             <div className="text-neutral-400 text-[10px] sm:text-[11px] md:text-xs font-semibold tracking-wider uppercase order-2 md:order-1 flex items-center justify-center gap-2 flex-wrap">
               <span className="font-extrabold text-white">RIDER IQ</span>
               <span>•</span>
-              <span>© 2026 RiderIQ</span>
+              <span>© 2026 Brovxi</span>
               <span>•</span>
               <span className="text-neutral-400">Built for the ride.</span>
             </div>

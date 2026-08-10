@@ -10,9 +10,9 @@ export default function TripCalculator() {
   const fuelNeededLitres = (distanceKm / (mileageKmpl || 1)).toFixed(1);
   const rawTripCost = Math.round((distanceKm / (mileageKmpl || 1)) * fuelPricePerLitre);
   
-  // RiderIQ smart throttle optimization estimated 7-10% fuel saving
-  const riderIqSavings = Math.round(rawTripCost * 0.08);
-  const optimizedTripCost = rawTripCost - riderIqSavings;
+  // Brovxi smart throttle optimization estimated 7-10% fuel saving
+  const BrovxiSavings = Math.round(rawTripCost * 0.08);
+  const optimizedTripCost = rawTripCost - BrovxiSavings;
 
   return (
     <div className="rounded-2xl glass-panel border border-white/15 p-6 md:p-8 relative overflow-hidden shadow-2xl">
@@ -102,13 +102,13 @@ export default function TripCalculator() {
             <div>
               <div className="text-xs font-mono text-cyan-300 flex items-center gap-1">
                 <TrendingDown className="w-4 h-4 text-cyan-400" />
-                WITH RIDERIQ OPTIMIZATION
+                WITH Brovxi OPTIMIZATION
               </div>
               <div className="text-xs text-neutral-400 mt-0.5">Smooth throttle insights save ~8% fuel</div>
             </div>
             <div className="text-right">
               <div className="text-2xl font-extrabold text-cyan-400">₹{optimizedTripCost}</div>
-              <div className="text-[11px] font-mono text-emerald-400">Save ₹{riderIqSavings}</div>
+              <div className="text-[11px] font-mono text-emerald-400">Save ₹{BrovxiSavings}</div>
             </div>
           </div>
         </div>

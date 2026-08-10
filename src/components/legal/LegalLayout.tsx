@@ -22,7 +22,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({
   children
 }) => {
   useEffect(() => {
-    document.title = `${title} | RiderIQ`;
+    document.title = `${title} | Brovxi`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute('content', metaDescription);
@@ -44,12 +44,12 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/15 hover:border-cyan-400/50 text-xs sm:text-sm font-semibold text-neutral-200 hover:text-white transition-all group cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4 text-cyan-400 group-hover:-translate-x-1 transition-transform" />
-            <span>Back to RiderIQ</span>
+            <span>Back to Brovxi</span>
           </button>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="font-extrabold text-sm sm:text-base tracking-tighter text-white">
-              RIDER<span className="text-cyan-400">IQ</span>
+            <span className="font-extrabold text-sm sm:text-base tracking-tighter text-white uppercase">
+              BROV<span className="text-cyan-400">XI</span>
             </span>
             <span className="hidden sm:inline text-neutral-600">•</span>
             <span className="hidden sm:inline text-xs font-mono text-neutral-400 uppercase tracking-widest">
@@ -129,7 +129,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({
           <ShieldCheck className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
           <div>
             <strong className="text-white block mb-0.5">Informational Statement:</strong>
-            The legal disclosures on this page accurately describe the technical implementation, storage, and API data practices of the RiderIQ web platform. This document is provided for general informational transparency and does not constitute formal legal advice.
+            The legal disclosures on this page accurately describe the technical implementation, storage, and API data practices of the Brovxi web platform. This document is provided for general informational transparency and does not constitute formal legal advice.
           </div>
         </div>
 

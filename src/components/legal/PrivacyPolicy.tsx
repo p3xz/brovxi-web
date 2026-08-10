@@ -10,9 +10,9 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onNavigate }) => {
   return (
     <LegalLayout
       title="Privacy Policy"
-      subtitle="Transparency regarding data collection, Spotify OAuth authorization, storage, and server interactions for the RiderIQ Web Platform."
+      subtitle="Transparency regarding data collection, Spotify OAuth authorization, storage, and server interactions for the Brovxi Web Platform."
       badge="PRIVACY & DATA TRANSPARENCY"
-      metaDescription="Read the official RiderIQ Privacy Policy to understand how Spotify API OAuth data, browser storage, cookies, and telemetry simulator inputs are handled."
+      metaDescription="Read the official Brovxi Privacy Policy to understand how Spotify API OAuth data, browser storage, cookies, and telemetry simulator inputs are handled."
       activeTab="privacy"
       onNavigate={onNavigate}
     >
@@ -23,7 +23,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onNavigate }) => {
           <h2>1. Overview & Data Philosophy</h2>
         </div>
         <p>
-          RiderIQ ("we", "our", or "the platform") is a motorcycle telemetry, navigation intelligence, and intercom audio cockpit simulator. We respect user privacy and adhere to a strict principle of minimal data operation: we only process data that is technically required to operate the interactive web platform and deliver integrated features such as the Spotify Web API Intercom Cockpit.
+          Brovxi ("we", "our", or "the platform") is a motorcycle telemetry, navigation intelligence, and intercom audio cockpit simulator. We respect user privacy and adhere to a strict principle of minimal data operation: we only process data that is technically required to operate the interactive web platform and deliver integrated features such as the Spotify Web API Intercom Cockpit.
         </p>
         <p>
           We do not operate user account databases, do not sell user data, do not run third-party advertising networks, and do not embed behavioral tracking pixels or analytics scripts on this website.
@@ -179,7 +179,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onNavigate }) => {
             <strong className="text-white">Disconnect Button:</strong> Clicking the "Disconnect" button in the Spotify Intercom HUD immediately removes all stored Spotify tokens from browser `localStorage`, clears session HTTP-Only cookies via `/api/spotify/disconnect`, and resets all active player states.
           </li>
           <li>
-            <strong className="text-white">Revoking Spotify Authorization:</strong> You can revoke RiderIQ's access to your Spotify account at any time by visiting your official <a href="https://www.spotify.com/account/apps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 underline">Spotify Managed Apps Dashboard</a> and clicking "Remove Access".
+            <strong className="text-white">Revoking Spotify Authorization:</strong> You can revoke Brovxi's access to your Spotify account at any time by visiting your official <a href="https://www.spotify.com/account/apps/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 underline">Spotify Managed Apps Dashboard</a> and clicking "Remove Access".
           </li>
           <li>
             <strong className="text-white">Browser Data Clearing:</strong> Clearing your browser cookies and site storage removes all local session state immediately.
@@ -215,7 +215,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onNavigate }) => {
         </p>
         <div className="pt-2">
           <a
-            href="mailto:contactphoenixfy@gmail.com?subject=RiderIQ%20Privacy%20Inquiry"
+            href="mailto:contactphoenixfy@gmail.com?subject=Brovxi%20Privacy%20Inquiry"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-cyan-300 font-mono text-sm font-semibold transition-all"
           >
             <span>contactphoenixfy@gmail.com</span>

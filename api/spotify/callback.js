@@ -3,7 +3,7 @@ import { getCredentials, getCookies } from '../_utils.js';
 export default async function handler(req, res) {
   const { clientId, clientSecret, redirectUri } = getCredentials();
 
-  const host = req.headers['x-forwarded-host'] || req.headers.host || 'rider-iq-seven.vercel.app';
+  const host = req.headers['x-forwarded-host'] || req.headers.host || 'brovxi-seven.vercel.app';
   const proto = req.headers['x-forwarded-proto'] || 'https';
   const frontendUrl = process.env.FRONTEND_URL || `${proto}://${host}`;
 

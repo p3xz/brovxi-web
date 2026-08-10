@@ -176,8 +176,8 @@ export default function LeanAngleHUD() {
               {isExtreme
                 ? 'High lean angle detected! Ensure smooth throttle control and check road surface traction.'
                 : isWarning
-                ? 'Approaching progressive lean threshold. RiderIQ telemetry logs corner entry speed and roll rate.'
-                : 'Optimal cornering geometry. RiderIQ captures smooth arc trajectories automatically.'}
+                ? 'Approaching progressive lean threshold. Brovxi telemetry logs corner entry speed and roll rate.'
+                : 'Optimal cornering geometry. Brovxi captures smooth arc trajectories automatically.'}
             </div>
           </div>
         </div>

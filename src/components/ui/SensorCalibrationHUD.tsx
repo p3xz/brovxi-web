@@ -90,7 +90,7 @@ export default function SensorCalibrationHUD() {
             />
             <div className="text-[11px] font-mono text-emerald-400 flex items-center gap-1">
               <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
-              <span>RiderIQ auto-zeroes +{pitchOffset}° pitch offset. True lean angle remains 0° at rest!</span>
+              <span>Brovxi auto-zeroes +{pitchOffset}° pitch offset. True lean angle remains 0° at rest!</span>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function SensorCalibrationHUD() {
               Mounting Independent Lean Angle
             </div>
             <p className="text-neutral-400 text-xs leading-relaxed">
-              No matter if your phone is mounted sideways on handlebars, flat on a tank bag, or inside your riding jacket — RiderIQ uses high-frequency gyroscope + accelerometer sensor fusion to construct a 3D rotation matrix and calibrate a true gravity reference.
+              No matter if your phone is mounted sideways on handlebars, flat on a tank bag, or inside your riding jacket — Brovxi uses high-frequency gyroscope + accelerometer sensor fusion to construct a 3D rotation matrix and calibrate a true gravity reference.
             </p>
           </div>
 
@@ -113,7 +113,7 @@ export default function SensorCalibrationHUD() {
               Auto-Zeroing at Ride Start
             </div>
             <p className="text-neutral-400 text-xs leading-relaxed">
-              As soon as you mount your motorcycle and start rolling above 5 km/h, RiderIQ dynamically isolates vehicle roll from phone tilt, guaranteeing precise lean metrics (±0.5° accuracy).
+              As soon as you mount your motorcycle and start rolling above 5 km/h, Brovxi dynamically isolates vehicle roll from phone tilt, guaranteeing precise lean metrics (±0.5° accuracy).
             </p>
           </div>
         </div>
