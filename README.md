@@ -74,7 +74,7 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/namish-yadav/brovxi.git
+   git clone https://github.com/p3xz/brovxi-web.git
    cd brovxi
    ```
 
@@ -112,7 +112,9 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 ## 🤝 Contact & Creator
 
-- **Creator:** Built by rider-technologists for riders.
+- **Creator:** Namish Yadav
+- **GitHub:** [https://github.com/p3xz](https://github.com/p3xz)
+- **LinkedIn:** [https://www.linkedin.com/in/namish-yadav-639769408/](https://www.linkedin.com/in/namish-yadav-639769408/)
 - **Instagram:** [@nam7sh](https://instagram.com/nam7sh)
 - **Email:** `contactphoenixfy@gmail.com`
 
