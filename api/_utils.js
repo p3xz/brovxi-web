@@ -23,8 +23,9 @@ export function getCredentials() {
     '';
 
   const clientSecret =
+    // Server-only: never read the secret from a VITE_ or NEXT_PUBLIC_
+    // variable, since those get embedded into the client bundle.
     env['SPOTIFY_CLIENT_SECRET'] ||
-    env['VITE_SPOTIFY_CLIENT_SECRET'] ||
     '';
 
   const redirectUri =
