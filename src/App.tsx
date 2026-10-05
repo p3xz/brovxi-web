@@ -326,7 +326,7 @@ function App() {
                 Automatic Post-Ride Telemetry Card & ETA Comparison
               </h2>
               <p className="text-neutral-300 text-base sm:text-lg">
-                After every ride, Brovxi compiles your distance, top speed, average speed, max lean angle, velocity curve, and compares your actual duration against Google Maps estimated ETA (e.g. <strong>Greater Noida to Mathura: 75 min ETA vs 52 min actual = 23 min faster ⚡</strong>).
+                After every ride, Brovxi compiles your distance, top speed, average speed, max lean angle, velocity curve, and compares your actual duration against Google Maps estimated ETA (e.g. <strong>Greater Noida to Mathura: 75 min ETA vs 52 min actual = 23 min faster</strong>).
               </p>
             </div>
 
@@ -816,7 +816,7 @@ function App() {
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
                     <Zap className="w-3.5 h-3.5" />
-                    <span>⚡ Response &lt; 24 hrs</span>
+                    <span>Response &lt; 24 hrs</span>
                   </div>
                 </div>
 
@@ -835,10 +835,10 @@ function App() {
                   <div className="text-xs font-mono text-neutral-400 uppercase">Select Topic to Mail</div>
                   <div className="flex flex-wrap gap-2.5">
                     {[
-                      { label: "💡 Feature Idea", subject: "Brovxi Feature Idea" },
-                      { label: "🛠️ Developer API", subject: "Brovxi Developer API Inquiry" },
-                      { label: "🤝 Partnership", subject: "Brovxi Partnership Proposal" },
-                      { label: "🏍️ Rider Feedback", subject: "Brovxi Rider Feedback" }
+                      { label: "Feature Idea", subject: "Brovxi Feature Idea" },
+                      { label: "Developer API", subject: "Brovxi Developer API Inquiry" },
+                      { label: "Partnership", subject: "Brovxi Partnership Proposal" },
+                      { label: "Rider Feedback", subject: "Brovxi Rider Feedback" }
                     ].map((topic, i) => (
                       <a
                         key={i}

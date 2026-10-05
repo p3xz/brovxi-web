@@ -26,7 +26,7 @@ const CHART_H = SVG_HEIGHT - PADDING.top - PADDING.bottom;
  */
 const ROUTES_DATA = {
   'greater-noida-mathura': {
-    title: 'Greater Noida ➔ Mathura (Yamuna Expressway)',
+    title: 'Greater Noida to Mathura (Yamuna Expressway)',
     startPoint: 'Greater Noida',
     endPoint: 'Mathura',
     distance: '112.5 km',
@@ -49,7 +49,7 @@ const ROUTES_DATA = {
     ]
   },
   'express-pass': {
-    title: 'City Express ➔ Mountain Highway',
+    title: 'City Express to Mountain Highway',
     startPoint: 'Sector 62',
     endPoint: 'Yamuna View',
     distance: '28.4 km',
@@ -73,7 +73,7 @@ const ROUTES_DATA = {
     ]
   },
   'mountain-loop': {
-    title: 'Twisty Ghats ➔ Ridge Apex',
+    title: 'Twisty Ghats to Ridge Apex',
     startPoint: 'Valley Checkpoint',
     endPoint: 'Cloud Ridge',
     distance: '18.2 km',
@@ -181,7 +181,7 @@ export default function PostRideSummaryHUD() {
                   : 'text-neutral-400 hover:text-white'
               }`}
             >
-              {key === 'greater-noida-mathura' ? 'Noida ➔ Mathura' : key === 'express-pass' ? 'Highway' : 'Mountain'}
+              {key === 'greater-noida-mathura' ? 'Noida to Mathura' : key === 'express-pass' ? 'Highway' : 'Mountain'}
             </button>
           ))}
         </div>
@@ -224,7 +224,7 @@ export default function PostRideSummaryHUD() {
             <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 shrink-0 animate-bounce" />
             <div className="min-w-0 flex-1">
               <div className="text-base sm:text-lg font-black tracking-tight leading-snug">
-                {Math.abs(timeDifferenceMins)} MINUTES FASTER ⚡
+                {Math.abs(timeDifferenceMins)} MINUTES FASTER
               </div>
               <div className="text-xs opacity-80 mt-0.5">
                 You reached your destination {percentageFaster}% ahead of Google Maps estimated ETA!

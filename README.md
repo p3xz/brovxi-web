@@ -1,10 +1,10 @@
-# 🏍️ Brovxi — Connected Motorcycle Telemetry & Cockpit Engine
+# Brovxi — Connected Motorcycle Telemetry & Cockpit Engine
 
 > **Notice:** This repository contains the official **Brovxi Pre-Launch Web Platform & Interactive Simulator**. The full native mobile applications (iOS & Android) and hardware sensor integrations are currently under active development.
 
 ---
 
-## 🌟 Overview
+## Overview
 
 **Brovxi** is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine engineered specifically for two wheels. Built around real motorcycle dynamics, Brovxi combines 6-axis IMU sensor fusion, Google/Apple Maps speed camera radar warnings, post-ride ETA pace delta analytics, and an integrated Spotify Web API Intercom Cockpit.
 
@@ -12,9 +12,9 @@ Instead of just recording a ride — **Brovxi helps you master it.**
 
 ---
 
-## 🔥 Key Pre-Launch Web Features
+## Key Pre-Launch Web Features
 
-### 1. 🎵 Spotify Web API Intercom Cockpit
+### 1.  Spotify Web API Intercom Cockpit
 - **Discord-Style OAuth 2.0 PKCE**: End users connect their Spotify accounts via Spotify's official login screen with zero developer setup required for website visitors.
 - **Live Currently Playing Telemetry**: Displays live album artwork, song title, artist, album name, progress scrubber bar, and play/pause status.
 - **Speed-Adaptive Volume Boost**: Auto-adjusts audio gain (+15%) at speeds $\ge 100\text{ km/h}$ to counteract helmet wind noise.
@@ -22,38 +22,38 @@ Instead of just recording a ride — **Brovxi helps you master it.**
 - **Curated Rider Playlists**: Quick one-tap launcher for motorcycle soundtracks (*Mountain Twisties Heavy Beat*, *Highway Cruise Synthwave*, *Night Ride Lo-Fi*, *Track Day High Octane*).
 - **Recently Played List**: Shows recent tracks with relative played timestamps.
 
-### 2. 🏁 Post-Ride Telemetry & ETA Pace Delta
-- **Pace Comparison**: Compares actual ride duration against initial Google Maps / Apple Maps ETA estimates (e.g. *Beta to Delta: 10 min ETA vs 6 min actual = 4 min faster ⚡*).
+### 2.  Post-Ride Telemetry & ETA Pace Delta
+- **Pace Comparison**: Compares actual ride duration against initial Google Maps / Apple Maps ETA estimates (e.g. *Beta to Delta: 10 min ETA vs 6 min actual = 4 min faster *).
 - **Velocity Curve & Analytics**: Tracks distance, top speed, average speed, max lean angle, and ride smoothness score.
 
-### 3. 📐 Mounting-Independent Gyroscope Calibration
+### 3.  Mounting-Independent Gyroscope Calibration
 - **6-Axis Sensor Fusion**: Auto-zeroes pitch offsets whether mounted on handlebars, flat in a tank bag, or inside your jacket pocket.
 - **Cornering Lean Angle HUD Simulator**: Interactive real-time telemetry simulator computing lateral G-forces and traction safety thresholds.
 
-### 4. 🚨 Speed Camera Radar Alerts
+### 4.  Speed Camera Radar Alerts
 - **Speed Trap Warning Engine**: Real-time alerts for highway speed cameras, enforcement zones, and local speed limit thresholds.
 
-### 5. 👥 Multiplayer & Friends Leaderboard
+### 5.  Multiplayer & Friends Leaderboard
 - **Crew Rankings**: Compare weekly distance, top speed, max lean angles, and smoothness scores with your riding group.
 
-### 6. ⛽ Tour & Fuel Intelligence Calculator
+### 6.  Tour & Fuel Intelligence Calculator
 - **Trip Cost Estimator**: Calculates total fuel consumption (km/L), estimated cost, and required fuel stops based on machine profiles (e.g., Royal Enfield Hunter 350, Bajaj Dominar 400, Honda CB350).
 
 ---
 
-## 🚀 Upcoming Mobile App & Hardware Roadmap (Future Release)
+## Upcoming Mobile App & Hardware Roadmap (Future Release)
 
 The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
-- 📱 **Native iOS & Android Mobile Apps**: High-frequency background GPS & IMU logging.
-- ⚡ **Bluetooth 5.3 IMU Hardware Node**: Dedicated low-latency 6-axis IMU sensor pod for ultra-precise lean angle capture.
-- 🏍️ **ECU OBD-II Data Integration**: Real-time RPM, throttle position (WOT), gear selection, and engine temperature telemetry.
-- 🎧 **Helmet Intercom Mesh Sync**: Voice HUD navigation alerts and group rider voice mesh integration.
-- ☁️ **Brovxi Cloud Vault**: Cloud route sharing, twisties discovery, and telemetry archiving.
+-  **Native iOS & Android Mobile Apps**: High-frequency background GPS & IMU logging.
+-  **Bluetooth 5.3 IMU Hardware Node**: Dedicated low-latency 6-axis IMU sensor pod for ultra-precise lean angle capture.
+-  **ECU OBD-II Data Integration**: Real-time RPM, throttle position (WOT), gear selection, and engine temperature telemetry.
+-  **Helmet Intercom Mesh Sync**: Voice HUD navigation alerts and group rider voice mesh integration.
+-  **Brovxi Cloud Vault**: Cloud route sharing, twisties discovery, and telemetry archiving.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend Core**: React 19, TypeScript, Vite 8
 - **Styling**: Tailwind CSS v4, Vanilla CSS Design System, Glassmorphism UI
@@ -64,7 +64,7 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 ---
 
-## ⚙️ Local Development & Setup
+## Local Development & Setup
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18.0 or higher recommended)
@@ -110,7 +110,7 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 ---
 
-## 🤝 Contact & Creator
+## Contact & Creator
 
 - **Creator:** Namish Yadav
 - **GitHub:** [https://github.com/p3xz](https://github.com/p3xz)
@@ -121,5 +121,5 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 ---
 
 <p center="text-center">
-  <strong>One ride. One experience. Brovxi. 🏍️⚡</strong>
+  <strong>One ride. One experience. Brovxi. </strong>
 </p>

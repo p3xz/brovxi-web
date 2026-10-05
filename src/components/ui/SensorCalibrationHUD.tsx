@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Smartphone, RefreshCcw, Compass, CheckCircle2, Sliders } from 'lucide-react';
+import { Smartphone, RefreshCcw, Compass, CheckCircle2, Sliders, Bike, Briefcase, Shirt } from 'lucide-react';
 
 export default function SensorCalibrationHUD() {
   const [mountType, setMountType] = useState<'handlebar' | 'tankbag' | 'pocket'>('handlebar');
@@ -7,9 +7,9 @@ export default function SensorCalibrationHUD() {
   const [pitchOffset, setPitchOffset] = useState<number>(15); // phone tilt angle
 
   const mountProfiles = {
-    handlebar: { title: 'Handlebar RAM Mount', offset: '0° Ref', icon: '🏍️' },
-    tankbag: { title: 'Tank Bag Flat', offset: '12° Pitch Offset', icon: '🧳' },
-    pocket: { title: 'Rider Jacket Pocket', offset: 'Auto 3D Matrix', icon: '🧥' }
+    handlebar: { title: 'Handlebar RAM Mount', offset: '0° Ref', Icon: Bike },
+    tankbag: { title: 'Tank Bag Flat', offset: '12° Pitch Offset', Icon: Briefcase },
+    pocket: { title: 'Rider Jacket Pocket', offset: 'Auto 3D Matrix', Icon: Shirt }
   };
 
   return (
@@ -39,7 +39,9 @@ export default function SensorCalibrationHUD() {
           <div className="text-xs font-mono text-neutral-400">SELECT PHONE MOUNTING LOCATION</div>
 
           <div className="grid grid-cols-3 gap-2 max-w-full">
-            {(['handlebar', 'tankbag', 'pocket'] as const).map((type) => (
+            {(['handlebar', 'tankbag', 'pocket'] as const).map((type) => {
+              const MountIcon = mountProfiles[type].Icon;
+              return (
               <button
                 key={type}
                 onClick={() => setMountType(type)}
@@ -49,10 +51,11 @@ export default function SensorCalibrationHUD() {
                     : 'bg-white/5 border-white/10 text-neutral-400 hover:text-white'
                 }`}
               >
-                <span className="text-xl sm:text-2xl shrink-0">{mountProfiles[type].icon}</span>
+                <MountIcon className="w-6 h-6 shrink-0" />
                 <span className="text-[10px] sm:text-[11px] font-mono capitalize truncate max-w-full leading-tight text-center">{type}</span>
               </button>
-            ))}
+              );
+            })}
           </div>
 
           {/* Orientation Toggle */}

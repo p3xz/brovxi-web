@@ -193,12 +193,12 @@ MagneticButton.displayName = "MagneticButton";
 
 const MarqueeItem = () => (
   <div className="flex items-center space-x-12 px-6">
-    <span>RIDE SMARTER</span> <span className="text-cyan-400">✦</span>
-    <span>RIDE FURTHER</span> <span className="text-purple-400">✦</span>
-    <span>SMART ROUTE INTELLIGENCE</span> <span className="text-cyan-400">✦</span>
-    <span>FUEL & SERVICE TRACKING</span> <span className="text-purple-400">✦</span>
-    <span>LEAN ANGLE TELEMETRY</span> <span className="text-cyan-400">✦</span>
-    <span>BUILT FOR RIDERS</span> <span className="text-purple-400">✦</span>
+    <span>RIDE SMARTER</span> <span className="text-cyan-400">•</span>
+    <span>RIDE FURTHER</span> <span className="text-purple-400">•</span>
+    <span>SMART ROUTE INTELLIGENCE</span> <span className="text-cyan-400">•</span>
+    <span>FUEL & SERVICE TRACKING</span> <span className="text-purple-400">•</span>
+    <span>LEAN ANGLE TELEMETRY</span> <span className="text-cyan-400">•</span>
+    <span>BUILT FOR RIDERS</span> <span className="text-purple-400">•</span>
   </div>
 );
 
@@ -428,7 +428,7 @@ export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) =>
 
             <div className="footer-glass-pill px-4 sm:px-5 py-2 rounded-full flex items-center justify-center gap-2 order-1 md:order-2 cursor-default border-white/10 mx-auto md:mx-0">
               <span className="text-neutral-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">Designed & Built</span>
-              <span className="animate-footer-heartbeat text-xs md:text-sm text-cyan-400">⚡</span>
+              <span className="animate-footer-heartbeat text-xs md:text-sm text-cyan-400">•</span>
               <span className="text-neutral-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">for Riders</span>
             </div>
 

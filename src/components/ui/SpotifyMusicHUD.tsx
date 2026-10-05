@@ -27,22 +27,22 @@ interface RecentlyPlayedTrack {
 
 const riderPlaylists: Record<string, { name: string; spotifyUrl: string; contextUri: string }> = {
   twisties: {
-    name: "🏍️ Mountain Twisties Heavy Beat",
+    name: "Mountain Twisties Heavy Beat",
     spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DX1l2y6dAhBm4",
     contextUri: "spotify:playlist:37i9dQZF1DX1l2y6dAhBm4"
   },
   highway: {
-    name: "⚡ Highway Cruise Synthwave",
+    name: "Highway Cruise Synthwave",
     spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DXdLEN7aqioXM",
     contextUri: "spotify:playlist:37i9dQZF1DXdLEN7aqioXM"
   },
   night: {
-    name: "🌃 Night Ride Lo-Fi",
+    name: "Night Ride Lo-Fi",
     spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DX6VqV2uF9vTD",
     contextUri: "spotify:playlist:37i9dQZF1DX6VqV2uF9vTD"
   },
   track: {
-    name: "🔥 Track Day High Octane",
+    name: "Track Day High Octane",
     spotifyUrl: "https://open.spotify.com/playlist/37i9dQZF1DX4eRPd9Z5qZv",
     contextUri: "spotify:playlist:37i9dQZF1DX4eRPd9Z5qZv"
   }
@@ -535,7 +535,7 @@ export default function SpotifyMusicHUD() {
             {isConnected && (
               <span className="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#1DB954]/20 text-[#1DB954] border border-[#1DB954]/40 flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#1DB954] animate-pulse"></span>
-                Spotify Connected ✓
+                Spotify Connected
               </span>
             )}
           </h3>
@@ -650,7 +650,7 @@ export default function SpotifyMusicHUD() {
                 <Music className="w-8 h-8" />
               </div>
               <div className="space-y-1">
-                <div className="text-xs font-mono text-[#1DB954] uppercase tracking-wider font-bold">Spotify Connected ✓</div>
+                <div className="text-xs font-mono text-[#1DB954] uppercase tracking-wider font-bold">Spotify Connected</div>
                 <h4 className="text-xl font-bold text-white">Nothing is playing right now.</h4>
                 <p className="text-xs text-neutral-400 max-w-sm mx-auto pt-1">
                   Start playing music on any Spotify device to sync live telemetry.
@@ -671,7 +671,7 @@ export default function SpotifyMusicHUD() {
             <div className="space-y-6">
               
               <div className="text-xs font-mono text-[#1DB954] uppercase tracking-wider font-bold flex items-center justify-between">
-                <span>Spotify Connected ✓</span>
+                <span>Spotify Connected</span>
                 <span className="flex items-center gap-1.5">
                   <span className={`w-2 h-2 rounded-full ${currentlyPlaying.isPlaying ? 'bg-[#1DB954] animate-pulse' : 'bg-neutral-500'}`}></span>
                   ● {currentlyPlaying.isPlaying ? 'Playing' : 'Paused'}
@@ -915,7 +915,7 @@ export default function SpotifyMusicHUD() {
                   simSpeed >= 100 ? 'bg-cyan-500/20 border-cyan-500/40 text-cyan-300' : 'bg-white/5 border-white/10 text-neutral-400'
                 }`}
               >
-                Speed: {simSpeed} km/h {simSpeed >= 100 ? '⚡' : ''}
+                Speed: {simSpeed} km/h
               </button>
 
               <button
@@ -924,7 +924,7 @@ export default function SpotifyMusicHUD() {
                   radarAlertActive ? 'bg-red-500/20 border-red-500/40 text-red-300 animate-pulse' : 'bg-white/5 border-white/10 text-neutral-400'
                 }`}
               >
-                Radar Alert: {radarAlertActive ? 'ACTIVE 🚨' : 'CLEAR'}
+                Radar Alert: {radarAlertActive ? 'ACTIVE' : 'CLEAR'}
               </button>
             </div>
           </div>
