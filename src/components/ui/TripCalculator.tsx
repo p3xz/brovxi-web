@@ -45,6 +45,7 @@ export default function TripCalculator() {
               step="10"
               value={distanceKm}
               onChange={(e) => setDistanceKm(parseInt(e.target.value, 10))}
+              aria-label="Planned ride distance in kilometers" 
               className="w-full accent-cyan-400 bg-neutral-800 h-2 rounded-lg cursor-pointer"
             />
           </div>
@@ -62,6 +63,7 @@ export default function TripCalculator() {
               step="1"
               value={mileageKmpl}
               onChange={(e) => setMileageKmpl(parseInt(e.target.value, 10))}
+              aria-label="Bike mileage in kilometers per litre" 
               className="w-full accent-orange-400 bg-neutral-800 h-2 rounded-lg cursor-pointer"
             />
           </div>
@@ -79,6 +81,7 @@ export default function TripCalculator() {
               step="1"
               value={fuelPricePerLitre}
               onChange={(e) => setFuelPricePerLitre(parseInt(e.target.value, 10))}
+              aria-label="Fuel price per litre in rupees" 
               className="w-full accent-emerald-400 bg-neutral-800 h-2 rounded-lg cursor-pointer"
             />
           </div>
