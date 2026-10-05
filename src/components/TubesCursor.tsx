@@ -1,4 +1,7 @@
 import React, { useEffect, useRef } from 'react';
+// Vendored locally (src/vendor/tubes1.min.js, from threejs-components@0.0.19)
+// so no third-party script is fetched from a CDN at runtime.
+import TubesCursorFn from '../vendor/tubes1.min.js';
 
 interface TubesCursorProps {
   className?: string;
@@ -18,31 +21,21 @@ export default function TubesCursor({ className = '', interactiveColors = true }
   useEffect(() => {
     let isMounted = true;
     const initTimer = setTimeout(() => {
-      const cdnUrl = 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js';
-      
-      // Use dynamic import evaluation to allow build-time TypeScript compilation of CDN URL
-      const dynamicImport = new Function('url', 'return import(url)');
-      dynamicImport(cdnUrl)
-        .then((module: any) => {
-          if (!isMounted) return;
-          const TubesCursorFn = module.default;
-
-          if (canvasRef.current) {
-            const app = TubesCursorFn(canvasRef.current, {
-              tubes: {
-                colors: ['#06b6d4', '#3b82f6', '#8b5cf6'],
-                lights: {
-                  intensity: 180,
-                  colors: ['#06b6d4', '#60a5fa', '#a855f7', '#38bdf8']
-                }
-              }
-            });
-            appRef.current = app;
+      if (!isMounted || !canvasRef.current) return;
+      try {
+        const app = TubesCursorFn(canvasRef.current, {
+          tubes: {
+            colors: ['#06b6d4', '#3b82f6', '#8b5cf6'],
+            lights: {
+              intensity: 180,
+              colors: ['#06b6d4', '#60a5fa', '#a855f7', '#38bdf8']
+            }
           }
-        })
-        .catch((err: any) => {
-          console.warn('TubesCursor CDN load notice:', err);
         });
+        appRef.current = app;
+      } catch (err) {
+        console.warn('TubesCursor init notice:', err);
+      }
     }, 120);
 
     return () => {
