@@ -344,24 +344,35 @@ export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) =>
 
                 <MagneticButton
                   as="a"
-                  href="https://github.com/namish-yadav"
+                  href="https://github.com/p3xz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-glass-pill px-4 sm:px-5 py-2.5 rounded-full text-neutral-300 font-medium text-xs md:text-sm hover:text-white flex items-center justify-center gap-2 min-h-[44px] text-center"
                 >
                   <span>GitHub</span>
-                  <span className="text-cyan-400 text-xs">namish-yadav</span>
+                  <span className="text-cyan-400 text-xs">p3xz</span>
                 </MagneticButton>
 
                 <MagneticButton
                   as="a"
-                  href="https://www.linkedin.com/in/namish-yadav-639769408/"
+                  href="https://linkedin.com/in/namish-yadav-639769408"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-glass-pill px-4 sm:px-5 py-2.5 rounded-full text-neutral-300 font-medium text-xs md:text-sm hover:text-white flex items-center justify-center gap-2 min-h-[44px] text-center"
                 >
                   <span>LinkedIn</span>
                   <span className="text-cyan-400 text-xs">Namish Yadav</span>
+                </MagneticButton>
+
+                <MagneticButton
+                  as="a"
+                  href="https://namishhh.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-glass-pill px-4 sm:px-5 py-2.5 rounded-full text-neutral-300 font-medium text-xs md:text-sm hover:text-white flex items-center justify-center gap-2 min-h-[44px] text-center"
+                >
+                  <span>Portfolio</span>
+                  <span className="text-cyan-400 text-xs">namishhh.vercel.app</span>
                 </MagneticButton>
               </div>
 

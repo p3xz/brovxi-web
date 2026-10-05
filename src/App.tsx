@@ -17,6 +17,7 @@ import PostRideSummaryHUD from "./components/ui/PostRideSummaryHUD";
 import { PrivacyPolicy } from "./components/legal/PrivacyPolicy";
 import { TermsOfUse } from "./components/legal/TermsOfUse";
 import { CookieNotice } from "./components/legal/CookieNotice";
+import { CookieConsentBanner } from "./components/legal/CookieConsentBanner";
 import {
   Navigation,
   MapPin,
@@ -935,6 +936,7 @@ function App() {
       </main>
 
       <CinematicFooter onNavigate={handleNavigate} />
+      <CookieConsentBanner onNavigate={handleNavigate} />
     </div>
   );
 }
