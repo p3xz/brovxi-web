@@ -67,6 +67,8 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 ## What We Used
 
+![TypeScript](https://skillicons.dev/icons?i=ts) ![React](https://skillicons.dev/icons?i=react) ![Vite](https://skillicons.dev/icons?i=vite) ![Tailwind CSS](https://skillicons.dev/icons?i=tailwind) ![Three.js](https://skillicons.dev/icons?i=threejs) ![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express)
+
 - **Frontend Core**: React 19, TypeScript, Vite 8
 - **Styling**: Tailwind CSS v4, Vanilla CSS Design System, Glassmorphism UI
 - **Animations & Graphics**: GSAP (GreenSock), Three.js / OGL (WebGL Hyperspeed & TubesCursor interactive canvas)
