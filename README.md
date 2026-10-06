@@ -1,57 +1,48 @@
-# Brovxi: Connected Motorcycle Telemetry & Cockpit Engine
+# Brovxi Web
+
+> Brovxi is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine for two wheels, and this repo is its pre-launch web platform and interactive simulator, letting riders see and feel the cockpit experience now while the native mobile apps and hardware sensor integrations are under active development.
+
+![Status](https://img.shields.io/badge/status-active-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 > **Notice:** This repository contains the official **Brovxi Pre-Launch Web Platform & Interactive Simulator**. The full native mobile applications (iOS & Android) and hardware sensor integrations are currently under active development.
 
----
+## Features
 
-## What It Is
+- **Spotify Web API Intercom Cockpit**: Discord-style OAuth 2.0 PKCE login through Spotify's official screen with zero developer setup for visitors, live currently playing telemetry (album artwork, song, artist, album, progress scrubber, play/pause status), speed-adaptive volume boost of +15% at speeds of 100 km/h and above, radar warning auto-ducking of -12 dB on speed camera alerts, curated rider playlists, and a recently played list.
+- **Post-Ride Telemetry & ETA Pace Delta**: Pace comparison of actual ride duration against initial Maps ETA estimates, plus velocity curve and analytics tracking distance, top speed, average speed, max lean angle, and ride smoothness score.
+- **Mounting-Independent Gyroscope Calibration**: 6-axis sensor fusion that auto-zeroes pitch offsets whether the device is on handlebars, in a tank bag, or in a jacket pocket, with an interactive cornering lean angle HUD simulator computing lateral G-forces and traction safety thresholds.
+- **Speed Camera Radar Alerts**: Real-time warnings for highway speed cameras, enforcement zones, and local speed limit thresholds.
+- **Multiplayer & Friends Leaderboard**: Crew rankings comparing weekly distance, top speed, max lean angles, and smoothness scores with your riding group.
+- **Tour & Fuel Intelligence Calculator**: Trip cost estimator calculating total fuel consumption (km/L), estimated cost, and required fuel stops based on machine profiles (e.g., Royal Enfield Hunter 350, Bajaj Dominar 400, Honda CB350).
 
-**Brovxi** is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine engineered specifically for two wheels. Built around real motorcycle dynamics, Brovxi combines 6-axis IMU sensor fusion, Google/Apple Maps speed camera radar warnings, post-ride ETA pace delta analytics, and an integrated Spotify Web API Intercom Cockpit.
+## Tech Stack
 
-Instead of just recording a ride, **Brovxi helps you master it.**
+![TypeScript](https://skillicons.dev/icons?i=ts) ![React](https://skillicons.dev/icons?i=react) ![Vite](https://skillicons.dev/icons?i=vite) ![Tailwind CSS](https://skillicons.dev/icons?i=tailwind) ![Three.js](https://skillicons.dev/icons?i=threejs) ![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express)
 
----
+- **Frontend Core**: React 19, TypeScript, Vite 8
+- **Styling**: Tailwind CSS v4, Vanilla CSS Design System, Glassmorphism UI
+- **Animations & Graphics**: GSAP (GreenSock), Three.js / OGL (WebGL Hyperspeed & TubesCursor interactive canvas)
+- **Icons**: Lucide React
+- **Audio & Telemetry API**: Spotify Web API OAuth 2.0 (PKCE Authorization Code Flow)
+- **Backend Proxy Server (Optional)**: Node.js, Express, Cookie-Parser, CORS
 
-## Why It Was Built
+### Why This Stack
 
-Built as the pre-launch web platform and interactive simulator for Brovxi: a place for riders to see and feel the cockpit experience now, while the native mobile apps and hardware sensor integrations are under active development.
+- **React 19 + TypeScript**: component-driven cockpit HUDs with type safety across telemetry state.
+- **Vite**: fast dev server and production builds for the single-page app.
+- **Tailwind CSS v4 + Vanilla CSS**: the glassmorphism design system behind the cockpit UI.
+- **GSAP + Three.js / OGL**: the interactive WebGL canvases (HyperSpeed, TubesCursor) and animations used in the pre-launch showcase.
+- **Spotify Web API with PKCE**: streams the rider's own music into the cockpit without exposing secrets or passwords to the browser.
+- **Express proxy server (server/ + api/)**: handles the Spotify OAuth exchange and keeps the client secret server-side.
+- **Lucide React**: one consistent icon set across every HUD.
 
----
+## How It Works
 
-## When
-
-Built in **September 2026**.
-
----
-
-## Key Pre-Launch Web Features
-
-### 1.  Spotify Web API Intercom Cockpit
-- **Discord-Style OAuth 2.0 PKCE**: End users connect their Spotify accounts via Spotify's official login screen with zero developer setup required for website visitors.
-- **Live Currently Playing Telemetry**: Displays live album artwork, song title, artist, album name, progress scrubber bar, and play/pause status.
-- **Speed-Adaptive Volume Boost**: Auto-adjusts audio gain (+15%) at speeds ≥ 100 km/h to counteract helmet wind noise.
-- **Radar Warning Auto-Ducking**: Automatically ducks playback volume by -12 dB when speed camera alerts trigger.
-- **Curated Rider Playlists**: Quick one-tap launcher for motorcycle soundtracks (*Mountain Twisties Heavy Beat*, *Highway Cruise Synthwave*, *Night Ride Lo-Fi*, *Track Day High Octane*).
-- **Recently Played List**: Shows recent tracks with relative played timestamps.
-
-### 2.  Post-Ride Telemetry & ETA Pace Delta
-- **Pace Comparison**: Compares actual ride duration against initial Google Maps / Apple Maps ETA estimates (e.g. *Beta to Delta: 10 min ETA vs 6 min actual = 4 min faster *).
-- **Velocity Curve & Analytics**: Tracks distance, top speed, average speed, max lean angle, and ride smoothness score.
-
-### 3.  Mounting-Independent Gyroscope Calibration
-- **6-Axis Sensor Fusion**: Auto-zeroes pitch offsets whether mounted on handlebars, flat in a tank bag, or inside your jacket pocket.
-- **Cornering Lean Angle HUD Simulator**: Interactive real-time telemetry simulator computing lateral G-forces and traction safety thresholds.
-
-### 4.  Speed Camera Radar Alerts
-- **Speed Trap Warning Engine**: Real-time alerts for highway speed cameras, enforcement zones, and local speed limit thresholds.
-
-### 5.  Multiplayer & Friends Leaderboard
-- **Crew Rankings**: Compare weekly distance, top speed, max lean angles, and smoothness scores with your riding group.
-
-### 6.  Tour & Fuel Intelligence Calculator
-- **Trip Cost Estimator**: Calculates total fuel consumption (km/L), estimated cost, and required fuel stops based on machine profiles (e.g., Royal Enfield Hunter 350, Bajaj Dominar 400, Honda CB350).
-
----
+- The Vite single-page app renders the cockpit: Spotify music, lean angle simulator, navigation alerts, post-ride summary, sensor calibration, multiplayer leaderboard, and trip calculator.
+- Spotify login flows through the Express proxy or the Vercel API routes using the OAuth 2.0 PKCE authorization code flow; tokens are held server-side in cookies.
+- Currently playing, playback controls, and recently played data are all fetched through the proxy, so the client secret never reaches the browser.
+- Lean angle, speed, and pace analytics are computed client-side in the interactive simulator. Real sensor hardware arrives with the future mobile apps.
+- Legal pages (privacy, terms, cookies) and a cookie consent banner ship with the frontend.
 
 ## Upcoming Mobile App & Hardware Roadmap (Future Release)
 
@@ -63,87 +54,74 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 -  **Helmet Intercom Mesh Sync**: Voice HUD navigation alerts and group rider voice mesh integration.
 -  **Brovxi Cloud Vault**: Cloud route sharing, twisties discovery, and telemetry archiving.
 
----
-
-## What We Used
-
-![TypeScript](https://skillicons.dev/icons?i=ts) ![React](https://skillicons.dev/icons?i=react) ![Vite](https://skillicons.dev/icons?i=vite) ![Tailwind CSS](https://skillicons.dev/icons?i=tailwind) ![Three.js](https://skillicons.dev/icons?i=threejs) ![Node.js](https://skillicons.dev/icons?i=nodejs) ![Express](https://skillicons.dev/icons?i=express)
-
-- **Frontend Core**: React 19, TypeScript, Vite 8
-- **Styling**: Tailwind CSS v4, Vanilla CSS Design System, Glassmorphism UI
-- **Animations & Graphics**: GSAP (GreenSock), Three.js / OGL (WebGL Hyperspeed & TubesCursor interactive canvas)
-- **Icons**: Lucide React
-- **Audio & Telemetry API**: Spotify Web API OAuth 2.0 (PKCE Authorization Code Flow)
-- **Backend Proxy Server (Optional)**: Node.js, Express, Cookie-Parser, CORS
-
-## Why We Used This
-
-- **React 19 + TypeScript**: component-driven cockpit HUDs with type safety across telemetry state.
-- **Vite**: fast dev server and production builds for the single-page app.
-- **Tailwind CSS v4 + Vanilla CSS**: the glassmorphism design system behind the cockpit UI.
-- **GSAP + Three.js / OGL**: the interactive WebGL canvases (HyperSpeed, TubesCursor) and animations used in the pre-launch showcase.
-- **Spotify Web API with PKCE**: streams the rider's own music into the cockpit without exposing secrets or passwords to the browser.
-- **Express proxy server (server/ + api/)**: handles the Spotify OAuth exchange and keeps the client secret server-side.
-- **Lucide React**: one consistent icon set across every HUD.
-
----
-
-## How It Works
-
-- The Vite single-page app renders the cockpit: Spotify music, lean angle simulator, navigation alerts, post-ride summary, sensor calibration, multiplayer leaderboard, and trip calculator.
-- Spotify login flows through the Express proxy or the Vercel API routes using the OAuth 2.0 PKCE authorization code flow; tokens are held server-side in cookies.
-- Currently playing, playback controls, and recently played data are all fetched through the proxy, so the client secret never reaches the browser.
-- Lean angle, speed, and pace analytics are computed client-side in the interactive simulator. Real sensor hardware arrives with the future mobile apps.
-- Legal pages (privacy, terms, cookies) and a cookie consent banner ship with the frontend.
-
----
-
-## Local Development & Setup
+## Quick Start
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v18.0 or higher recommended)
-- `npm` or `yarn`
 
-### Installation Steps
+- **Node.js**: v18.0 or higher (recommended; npm ships with Node.js)
+- **React**: 19 (per `package.json`)
+- **TypeScript**: 6.x (per `package.json`)
+- **Vite**: 8 (per `package.json`)
+- **Tailwind CSS**: v4 (per `package.json`)
+- A Spotify developer app (for the music cockpit features)
 
-1. **Clone the Repository:**
+### Installation
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/p3xz/brovxi-web.git
    cd brovxi-web
    ```
 
-2. **Install Dependencies:**
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Configure Environment Variables:**
-   Copy `.env.example` to create your local `.env` file:
+3. **Configure environment variables:**
    ```bash
    cp .env.example .env
    ```
+   Fill in `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, and `SPOTIFY_REDIRECT_URI` in `.env` with your own credentials from the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard). Make sure to register the redirect URI under Redirect URIs in your Spotify Dashboard (see the Configuration section below).
 
-   Add your **Spotify Application Credentials** registered in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard):
-   ```env
-   SPOTIFY_CLIENT_ID=your_spotify_client_id_here
-   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret_here
-   SPOTIFY_REDIRECT_URI=https://brovxi-seven.vercel.app/api/spotify/callback
-   ```
-   *(Make sure to register `https://brovxi-seven.vercel.app/api/spotify/callback` under Redirect URIs in your Spotify Dashboard).*
-
-4. **Start the Development Server:**
+4. **Start the development server:**
    ```bash
    npm run dev
    ```
-   (`npm run dev` starts both the Express proxy server and the Vite dev server via concurrently.)
-   Open `http://localhost:5173/` in your browser.
+   This starts both the Express proxy server and the Vite dev server (via concurrently). Open `http://localhost:5173/` in your browser.
 
-5. **Build for Production:**
+5. **Build for production:**
    ```bash
    npm run build
    ```
 
----
+## Usage
+
+Start the app and open it in your browser:
+
+```bash
+npm run dev
+```
+
+Then go to `http://localhost:5173/`, connect your Spotify account on the login screen, and try the intercom cockpit, lean angle simulator, and post-ride telemetry from the navigation.
+
+## Configuration
+
+| Variable | Description | Default | Required |
+| --- | --- | --- | --- |
+| `SPOTIFY_CLIENT_ID` | Client ID of your Spotify application from the Spotify Developer Dashboard | None | Yes |
+| `SPOTIFY_CLIENT_SECRET` | Client secret of your Spotify application; kept server-side by the proxy | None | Yes |
+| `SPOTIFY_REDIRECT_URI` | OAuth callback URL registered under Redirect URIs in your Spotify Dashboard | None | Yes |
+
+Never commit your `.env` file: real secret values stay local and must not be checked into git.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License, copyright (c) 2026 p3xz. See the [LICENSE](LICENSE) file for the full text.
 
 ## Contact & Creator
 
