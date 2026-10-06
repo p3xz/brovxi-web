@@ -1,10 +1,12 @@
-# Brovxi Web
+# Rideoxy Web
 
-> Brovxi is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine for two wheels, and this repo is its pre-launch web platform and interactive simulator, letting riders see and feel the cockpit experience now while the native mobile apps and hardware sensor integrations are under active development.
+![Preview](preview.png)
+
+> Rideoxy is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine for two wheels, and this repo is its pre-launch web platform and interactive simulator, letting riders see and feel the cockpit experience now while the native mobile apps and hardware sensor integrations are under active development.
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
-> **Notice:** This repository contains the official **Brovxi Pre-Launch Web Platform & Interactive Simulator**. The full native mobile applications (iOS & Android) and hardware sensor integrations are currently under active development.
+> **Notice:** This repository contains the official **Rideoxy Pre-Launch Web Platform & Interactive Simulator**. The full native mobile applications (iOS & Android) and hardware sensor integrations are currently under active development.
 
 ## Features
 
@@ -46,13 +48,13 @@
 
 ## Upcoming Mobile App & Hardware Roadmap (Future Release)
 
-The Brovxi ecosystem is expanding into a full hardware & mobile suite:
+The Rideoxy ecosystem is expanding into a full hardware & mobile suite:
 
 -  **Native iOS & Android Mobile Apps**: High-frequency background GPS & IMU logging.
 -  **Bluetooth 5.3 IMU Hardware Node**: Dedicated low-latency 6-axis IMU sensor pod for ultra-precise lean angle capture.
 -  **ECU OBD-II Data Integration**: Real-time RPM, throttle position (WOT), gear selection, and engine temperature telemetry.
 -  **Helmet Intercom Mesh Sync**: Voice HUD navigation alerts and group rider voice mesh integration.
--  **Brovxi Cloud Vault**: Cloud route sharing, twisties discovery, and telemetry archiving.
+-  **Rideoxy Cloud Vault**: Cloud route sharing, twisties discovery, and telemetry archiving.
 
 ## Quick Start
 
@@ -134,5 +136,5 @@ This project is licensed under the MIT License, copyright (c) 2026 p3xz. See the
 ---
 
 <p align="center">
-  <strong>One ride. One experience. Brovxi. </strong>
+  <strong>One ride. One experience. Rideoxy. </strong>
 </p>
