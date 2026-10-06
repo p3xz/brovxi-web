@@ -1,14 +1,26 @@
-# Brovxi — Connected Motorcycle Telemetry & Cockpit Engine
+# Brovxi: Connected Motorcycle Telemetry & Cockpit Engine
 
 > **Notice:** This repository contains the official **Brovxi Pre-Launch Web Platform & Interactive Simulator**. The full native mobile applications (iOS & Android) and hardware sensor integrations are currently under active development.
 
 ---
 
-## Overview
+## What It Is
 
 **Brovxi** is an advanced motorcycle telemetry, navigation intelligence, and audio cockpit engine engineered specifically for two wheels. Built around real motorcycle dynamics, Brovxi combines 6-axis IMU sensor fusion, Google/Apple Maps speed camera radar warnings, post-ride ETA pace delta analytics, and an integrated Spotify Web API Intercom Cockpit.
 
-Instead of just recording a ride — **Brovxi helps you master it.**
+Instead of just recording a ride, **Brovxi helps you master it.**
+
+---
+
+## Why It Was Built
+
+Built as the pre-launch web platform and interactive simulator for Brovxi: a place for riders to see and feel the cockpit experience now, while the native mobile apps and hardware sensor integrations are under active development.
+
+---
+
+## When
+
+Built in **September 2026**.
 
 ---
 
@@ -17,8 +29,8 @@ Instead of just recording a ride — **Brovxi helps you master it.**
 ### 1.  Spotify Web API Intercom Cockpit
 - **Discord-Style OAuth 2.0 PKCE**: End users connect their Spotify accounts via Spotify's official login screen with zero developer setup required for website visitors.
 - **Live Currently Playing Telemetry**: Displays live album artwork, song title, artist, album name, progress scrubber bar, and play/pause status.
-- **Speed-Adaptive Volume Boost**: Auto-adjusts audio gain (+15%) at speeds $\ge 100\text{ km/h}$ to counteract helmet wind noise.
-- **Radar Warning Auto-Ducking**: Automatically ducks playback volume by $-12\text{dB}$ when speed camera alerts trigger.
+- **Speed-Adaptive Volume Boost**: Auto-adjusts audio gain (+15%) at speeds ≥ 100 km/h to counteract helmet wind noise.
+- **Radar Warning Auto-Ducking**: Automatically ducks playback volume by -12 dB when speed camera alerts trigger.
 - **Curated Rider Playlists**: Quick one-tap launcher for motorcycle soundtracks (*Mountain Twisties Heavy Beat*, *Highway Cruise Synthwave*, *Night Ride Lo-Fi*, *Track Day High Octane*).
 - **Recently Played List**: Shows recent tracks with relative played timestamps.
 
@@ -53,7 +65,7 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 ---
 
-## Technology Stack
+## What We Used
 
 - **Frontend Core**: React 19, TypeScript, Vite 8
 - **Styling**: Tailwind CSS v4, Vanilla CSS Design System, Glassmorphism UI
@@ -61,6 +73,26 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 - **Icons**: Lucide React
 - **Audio & Telemetry API**: Spotify Web API OAuth 2.0 (PKCE Authorization Code Flow)
 - **Backend Proxy Server (Optional)**: Node.js, Express, Cookie-Parser, CORS
+
+## Why We Used This
+
+- **React 19 + TypeScript**: component-driven cockpit HUDs with type safety across telemetry state.
+- **Vite**: fast dev server and production builds for the single-page app.
+- **Tailwind CSS v4 + Vanilla CSS**: the glassmorphism design system behind the cockpit UI.
+- **GSAP + Three.js / OGL**: the interactive WebGL canvases (HyperSpeed, TubesCursor) and animations used in the pre-launch showcase.
+- **Spotify Web API with PKCE**: streams the rider's own music into the cockpit without exposing secrets or passwords to the browser.
+- **Express proxy server (server/ + api/)**: handles the Spotify OAuth exchange and keeps the client secret server-side.
+- **Lucide React**: one consistent icon set across every HUD.
+
+---
+
+## How It Works
+
+- The Vite single-page app renders the cockpit: Spotify music, lean angle simulator, navigation alerts, post-ride summary, sensor calibration, multiplayer leaderboard, and trip calculator.
+- Spotify login flows through the Express proxy or the Vercel API routes using the OAuth 2.0 PKCE authorization code flow; tokens are held server-side in cookies.
+- Currently playing, playback controls, and recently played data are all fetched through the proxy, so the client secret never reaches the browser.
+- Lean angle, speed, and pace analytics are computed client-side in the interactive simulator. Real sensor hardware arrives with the future mobile apps.
+- Legal pages (privacy, terms, cookies) and a cookie consent banner ship with the frontend.
 
 ---
 
@@ -75,7 +107,7 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/p3xz/brovxi-web.git
-   cd brovxi
+   cd brovxi-web
    ```
 
 2. **Install Dependencies:**
@@ -101,6 +133,7 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
    ```bash
    npm run dev
    ```
+   (`npm run dev` starts both the Express proxy server and the Vite dev server via concurrently.)
    Open `http://localhost:5173/` in your browser.
 
 5. **Build for Production:**
@@ -120,6 +153,6 @@ The Brovxi ecosystem is expanding into a full hardware & mobile suite:
 
 ---
 
-<p center="text-center">
+<p align="center">
   <strong>One ride. One experience. Brovxi. </strong>
 </p>
