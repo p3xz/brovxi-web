@@ -90,11 +90,8 @@ export default async function handler(req, res) {
       profileErrorBody
     };
 
-    console.log("[Spotify Production Diagnostic]", JSON.stringify(responsePayload, null, 2));
-
     return res.status(200).json(responsePayload);
   } catch (err) {
-    console.error("Error running Spotify production diagnostic:", err);
     return res.status(500).json({ error: "INTERNAL_DIAGNOSTIC_ERROR", message: String(err) });
   }
 }
