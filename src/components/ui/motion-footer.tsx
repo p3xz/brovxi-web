@@ -355,7 +355,7 @@ export function CinematicFooter({ onNavigate }: { onNavigate?: (path: string) =>
 
                 <MagneticButton
                   as="a"
-                  href="https://linkedin.com/in/namish-yadav-639769408"
+                  href="https://linkedin.com/in/namishyadav"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-glass-pill px-4 sm:px-5 py-2.5 rounded-full text-neutral-300 font-medium text-xs md:text-sm hover:text-white flex items-center justify-center gap-2 min-h-[44px] text-center"

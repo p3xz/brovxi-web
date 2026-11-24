@@ -129,7 +129,7 @@ This project is licensed under the MIT License, copyright (c) 2026 p3xz. See the
 
 - **Creator:** Namish Yadav
 - **GitHub:** [https://github.com/p3xz](https://github.com/p3xz)
-- **LinkedIn:** [https://www.linkedin.com/in/namish-yadav-639769408/](https://www.linkedin.com/in/namish-yadav-639769408/)
+- **LinkedIn:** [https://www.linkedin.com/in/namishyadav/](https://www.linkedin.com/in/namishyadav/)
 - **Instagram:** [@nam7sh](https://instagram.com/nam7sh)
 - **Email:** `contactphoenixfy@gmail.com`
 

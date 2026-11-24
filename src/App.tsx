@@ -767,7 +767,7 @@ function App() {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/namish-yadav-639769408/"
+                    href="https://www.linkedin.com/in/namishyadav/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/5 border border-white/15 hover:border-cyan-400 text-sm font-medium text-neutral-300 hover:text-white transition-all"
